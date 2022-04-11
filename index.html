@@ -14,19 +14,17 @@
 </head>
 
 
-<body style="font-family: roboto;">
+<body>
     <header>
-        <nav>
-            <a href="#somos">Quem somos neste curso <strong>BCW18</strong></a> |
-            <a href="#cronograma">Cronograma do curso <strong>BCW18</strong> </a> |
-            <a href="#dicas">Dicas do time <strong>BCW18</strong> </a> |
-            <a href="#orientações">Orientações </a> |
-        </nav>
-
-
+        <ul>
+            <li><a href="#cadastro">Cadastro <strong>BCW18</strong></a></li>
+            <li><a href="#trajetoria">Trajetoria <strong>BCW18</strong> </a></li>
+            <li><a href="#dicas">Dicas do time <strong>BCW18</strong> </a></li>
+            <li><a href="#orientações">Orientações </a></li>
+        </ul>
     </header>
     <main>
-        <div style="width: 650px;">
+        <div class="divisorbase" id="trajetoria">
             <h1> <STRong>TRAJETORIA DE SUCESSO</STRong> </h1>
             <table>
                 <tr>
@@ -77,11 +75,64 @@
                     </td>
                 </tr>
             </table>
-        </div>
-        <main>
-            <footer>
+            <div>
+            </div>
+            <div class="divisorbase" id="cadastro">
+                <form action="#" method="">
+                    <div>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" placeholder="Entre com seu nome">
+                    </div>
+                    <div>
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" placeholder="Entre com seu e-mail">
+                    </div>
+                    <div>
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input type="date" id="nascimento">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="deficiencia">
+                        <label for="deficiencia">Deficiencia: </label>
+                    </div>
+                    <div>
+                        <label for="senha">Senha: </label>
+                        <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14">
 
-            </footer>
+                    </div>
+                    <div>
+                        <label for="escolaridade">Nivel Escolar: </label><br>
+                        <br>
+                        <input type="radio" name=" escolaridade" id="escolaridade" value="F1"> Fundamental <br>
+                        <input type="radio" name=" escolaridade" id="escolaridade" value="M1"> Médio <br>
+                        <input type="radio" name=" escolaridade" id="escolaridade" value="B1"> Bacharel <br>
+                        <input type="radio" name=" escolaridade" id="escolaridade" value="T1"> Tecnologo <br>
+                        <input type="radio" name=" escolaridade" id="escolaridade" value="L1"> Licenciado <br>
+                        <input type="radio" name=" escolaridade" id="escolaridade" value="P1"> Pos Graduado <br>
+                        <input type="radio" name=" escolaridade" id="escolaridade" value="P2"> Mestrado <br>
+                        <input type="radio" name=" escolaridade" id="escolaridade" value="P3"> Doutorado <br>
+                    </div>
+                    <div>
+                        <label for="experiência">Qual foi sua experiência com programação: </label>
+                        <input type="range" id="experiência" min="5" max="50" oninput="display.value=value"
+                            onchange="display.value=value">
+                        <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                            onchange="vol.value=value" maxlength="3" size="3" disabled>
+                    </div>
+                    <div>
+                        <label for="descrição">Descrição da Experiência: </label> <br>
+                        <textarea id="descrição" cols="70" rows="5" placeholder="Entre com as tecnologias"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="limpar">
+                    </div>
+                </form>
+            </div>
+            <main>
+                <footer>
+
+                </footer>
 
 </body>
 
