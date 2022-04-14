@@ -45,10 +45,6 @@ body {
     padding: 15px;
 }
 
-
-
-
-
 div.gallery {
     margin-left: auto;
     margin-right: auto;
@@ -97,7 +93,6 @@ input[type=reset] {
     cursor: pointer;
     float: right;
     margin: 10px;
-
 }
 
 input[type=submit]:hover,
@@ -121,17 +116,15 @@ input[type=reset]:hover {
     width: 20%;
     margin-top: 6px;
     text-align: right;
-
 }
 
 .col-70 {
     float: left;
     width: 70%;
     margin-top: 6px;
-
 }
 
-.formRow::after {
+.formRow:after {
     content: "";
     display: table;
     clear: both;
@@ -141,7 +134,6 @@ input[type=reset]:hover {
 .leftColumn {
     float: left;
     width: 75%;
-
 }
 
 .rightColumn {
@@ -171,13 +163,13 @@ input[type=reset]:hover {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
+
 }
 
 .footer {
@@ -187,9 +179,20 @@ input[type=reset]:hover {
     margin-top: 20px;
     color: azure;
     font-weight: bold;
-
 }
 
+.footerSocial {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/Informa que a div de baixo já começa recebendo as informaçoes/estilizações da div de cima/ .footerSocial>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+}
 
 @media screen and (max-width: 400px) {
 
@@ -227,4 +230,21 @@ input[type=reset]:hover {
         width: 100%;
         padding: 0;
     }
+}
+
+.footerSocial {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footerSocial>div {
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 27px;
+}
+
+.footerSocial img {
+    width: 50px;
 }
